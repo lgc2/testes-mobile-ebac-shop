@@ -4,7 +4,11 @@
   "description": "Projeto de Testes EBAC Mobile",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio run ./wdio.conf.js"
+    "appium": "appium",
+    "emulator": "emulator -avd Pixel_2_API_30 -gpu swiftshader_indirect",
+    "app-install": "adb install ./app/android/wcandroid-7.3.1.apk",
+    "test": "npx wdio run ./wdio.conf.js",
+    "test:all": "start-server-and-test appium 0.0.0.0:4723 emulator 127.0.0.1:8554 test"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +19,7 @@
     "@wdio/appium-service": "^7.20.1",
     "@wdio/local-runner": "^7.20.2",
     "@wdio/mocha-framework": "^7.20.0",
-    "@wdio/spec-reporter": "^7.20.0"
+    "@wdio/spec-reporter": "^7.20.0",
+    "start-server-and-test": "^1.14.0"
   }
 }

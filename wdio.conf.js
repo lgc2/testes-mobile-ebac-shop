@@ -5,8 +5,9 @@ exports.config = {
     port: 4723,
     path: '/wd/hub',
     specs: [
-        './test/specs/products.spec.js' // './test/specs/*.spec.js'
+        './test/specs/*.spec.js'
     ],
+    maxInstances: 1,
     framework: 'mocha',
     capabilities: [{
         "platformName": "Android",
