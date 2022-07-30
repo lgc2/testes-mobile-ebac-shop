@@ -4,9 +4,6 @@
   "description": "Projeto de Testes EBAC Mobile",
   "main": "index.js",
   "scripts": {
-    "appium": "appium",
-    "emulator": "emulator -avd Pixel_2_API_30 -gpu swiftshader_indirect",
-    "app-install": "adb install ./app/android/wcandroid-7.3.1.apk",
     "test": "npx wdio run ./wdio.conf.js",
     "report": "npx allure open allure-report"
   },
