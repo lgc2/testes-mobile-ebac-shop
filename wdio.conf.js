@@ -33,7 +33,7 @@ exports.config = {
     mochaOpts: {
         timeout: 300000
     },
-    reporters: ['spec',
+    reporters: ['spec'/*,
         ['allure', {
             outputDir: 'allure-results',
             disableWebdriverStepsReporting: true,
@@ -43,7 +43,7 @@ exports.config = {
             saveAllVideos: false,       // If true, also saves videos for successful test cases
             videoSlowdownMultiplier: 50, // Higher to get slower videos, lower for faster videos [Value 1-100]
         }]
-    ],
+    */]/*,
     onComplete: function () {
         const reportError = new Error('Could not generate Allure report')
         const generation = allure(['generate', 'allure-results', '--clean'])
@@ -66,5 +66,5 @@ exports.config = {
     },
     afterStep: async function (step, scenario, { error, duration, passed }, context) {
         await driver.takeScreenshot();
-    }
+    }*/
 }
