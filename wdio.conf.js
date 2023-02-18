@@ -22,7 +22,7 @@ exports.config = {
         // "automationName": "UiAutomator2",
         // "app": join(process.cwd(), './app/android/wcandroid-7.3.1.apk'),
         // "appWaitActivity": 'com.woocommerce.android.ui.login.LoginActivity'
-        "app": "bs://540a06373f0a19fb2eaa1515df7d6265fbb7434c",
+        "app_url": "bs://540a06373f0a19fb2eaa1515df7d6265fbb7434c",
         "device": "Samsung Galaxy Note 20",
         "os_version": "10.0",
         "project": "Primeiro projeto em Device Farm",
