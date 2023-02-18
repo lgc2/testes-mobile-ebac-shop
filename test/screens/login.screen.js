@@ -32,6 +32,7 @@ class LoginScreen {
     }
 
     async continueWithStoreCredentials() {
+        await this.#buttonContinueWithStoreCredentials.waitForExist({ timeout:30000 })
         await this.#buttonContinueWithStoreCredentials.click()
     }
 
